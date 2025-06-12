@@ -31,5 +31,7 @@
     noto-fonts-emoji
   ];
 
+  zramSwap = { enable = true; };
+
   system.stateVersion = "24.11";
 }

@@ -1,54 +1,18 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    birdtray
-    blueman
-    bluez
+    # desktop
     bspwm
-    copyq
-    docker
     dracula-icon-theme
     dracula-theme
-    dua
-    dunst
-    fd
-    feh
-    ffmpeg
-    fzf
-    git
-    gnome-keyring
     gsimplecal
     i3lock
-    jq
-    kdePackages.ark
-    lazygit
-    libnotify
     libreoffice
     lxappearance
-    menyoki
-    mpv
-    neovim
-    nmap
-    p7zip
-    pamixer
-    pavucontrol
     polkit_gnome
     polybar
-    pulseaudio
-    remmina
-    ripgrep
-    ripgrep-all
     rofi
-    rsync
-    seahorse
-    slop
-    sshfs
     sxhkd
     telegram-desktop
-    thunderbird
-    unrar
-    unzip
-    wezterm
-    wireguard-tools
     xclip
     xdg-desktop-portal
     xdg-desktop-portal-gtk
@@ -57,9 +21,64 @@
     xorg.xev
     xorg.xkill
     xorg.xsetroot
+
+    # archive
+    kdePackages.ark
+    p7zip
+    unrar
+    unzip
+    zip
+
+    # media
+    feh
+    ffmpeg
+    mpv
+    pamixer
+    pavucontrol
+    pulseaudio
+
+    # thunder
+    birdtray
+    thunderbird
+
+    # blue
+    blueman
+    bluez
+
+    # net
+    nmap
+    remmina
+    rsync
+    sshfs
+    wireguard-tools
+
+    # notify
+    dunst
+    libnotify
+
+    # sec
+    gnome-keyring
+    seahorse
+
+    # based
+    copyq
+    docker
+    dua
+    fd
+    fzf
+    jq
+    lazygit
+    menyoki
+    # neovim
+    ripgrep
+    ripgrep-all
+    slop
+    wezterm
     yazi
     yt-dlp
-    zip
     zoxide
+
+    # other
+    inetutils
   ];
 }

@@ -3,6 +3,9 @@
 
   services.openssh.enable = true;
 
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
+
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";
